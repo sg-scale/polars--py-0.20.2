@@ -19,7 +19,7 @@ patchelf; platform_system == 'Linux'  # Extra dependency for maturin, only for L
 numpy
 pandas
 pyarrow
-pydantic >= 2.0.0
+pydantic >= 2.14.3
 # Datetime / time zones
 backports.zoneinfo; python_version < '3.9'
 tzdata; platform_system == 'Windows'
