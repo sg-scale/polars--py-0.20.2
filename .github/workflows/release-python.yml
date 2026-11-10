@@ -36,7 +36,7 @@ jobs:
         package: [polars, polars-lts-cpu, polars-u64-idx]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ inputs.sha }}
 
@@ -93,7 +93,7 @@ jobs:
             architecture: aarch64
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ inputs.sha }}
 
@@ -195,7 +195,7 @@ jobs:
     needs: publish-to-pypi
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ inputs.sha }}
 
